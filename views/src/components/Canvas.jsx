@@ -8,6 +8,7 @@ import Brush from "../tools/Brush";
 const Canvas = observer(() => {
   const canvasRef = useRef();
 
+
   useEffect(() => {
     console.log(canvasRef.current);
     canvasState.setCanvas(canvasRef.current);
@@ -16,7 +17,7 @@ const Canvas = observer(() => {
 
   return (
     <div className="canvas">
-      <canvas ref={canvasRef} width={600} height={400}></canvas>
+      <canvas ref={canvasRef}  width={700} height={700}></canvas>
     </div>
   );
 });
